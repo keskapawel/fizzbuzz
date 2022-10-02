@@ -1,3 +1,8 @@
+.wrapper > p {
+  padding: 2px 0;
+  color: black;
+}
+
 .wrapper > p:nth-child(3n + 1) {
   visibility: hidden;
   color: transparent;
@@ -44,9 +49,4 @@
   width: auto;
   height: auto;
   content: unset;
-}
-
-.wrapper > p {
-  padding: 2px 0;
-  color: black;
 }
