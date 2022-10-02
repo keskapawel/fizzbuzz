@@ -2,14 +2,14 @@
   visibility: hidden;
   color: transparent;
   font-size: 0;
-  letter-spacing: unset;
+  letter-spacing: inherit;
 }
 
 .wrapper > p:nth-child(5n + 1) {
   visibility: hidden;
   color: transparent;
   font-size: 0;
-  letter-spacing: unset;
+  letter-spacing: inherit;
 }
 
 .wrapper > p:nth-child(3n + 1)::before {
