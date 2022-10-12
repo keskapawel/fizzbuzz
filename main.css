@@ -4,7 +4,8 @@
 }
 
 .wrapper > p:nth-child(3n + 1),
-.wrapper > p:nth-child(5n + 1) {
+.wrapper > p:nth-child(5n + 1),
+.wrapper > p:first-of-type {
     visibility: hidden;
     color: transparent;
     font-size: 0;
@@ -12,7 +13,9 @@
 }
 
 .wrapper > p:nth-child(3n + 1)::before,
-.wrapper > p:nth-child(5n + 1)::after {
+.wrapper > p:nth-child(5n + 1)::after,
+.wrapper > p:first-of-type::before,
+.wrapper > p:first-of-type::after {
     width: auto;
     height: auto;
     visibility: visible;
@@ -30,15 +33,10 @@
     content: "Buzz";
 }
 
-.wrapper > p:first-of-type::before,
-.wrapper > p:first-of-type::after {
-    width: auto;
-    height: auto;
+.wrapper > p:first-of-type::before {
+    content: unset;
 }
 
 .wrapper > p:first-of-type::after {
     content: "0";
-}
-.wrapper > p:first-of-type::before {
-    content: unset;
 }
